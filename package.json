@@ -1,0 +1,27 @@
+{
+  "name": "Kokua",
+  "version": "1.0.0",
+  "description": "PE Plataforma educativa de contenidos para la universidad UTNG.",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/axeljovanny/Kokua.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/axeljovanny/Kokua/issues"
+  },
+  "homepage": "https://github.com/axeljovanny/Kokua#readme"
+}
