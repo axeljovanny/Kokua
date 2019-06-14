@@ -1,5 +1,5 @@
 nav{
-    background-color: #58b368;
+    background-color: rgba(255,255,255,0.9);
 }
 nav ul li a{
     color: black;
@@ -30,7 +30,7 @@ nav form {
 
 
 .my-grey{
-    background: #f7f7f7;
+    background: #f2f4f6;
 }
 
 input.search-field {
@@ -41,7 +41,7 @@ input.search-field {
     height: 36px;
     padding: 8px 8px 8px 60px;
     width: 200px;
-    background: #f7f7f7;
+    background: #f2f4f6;
     transition: background 0.6s, width .6s;
 }
 input.search-field:hover {
@@ -60,7 +60,7 @@ input.search-field:focus {
     color: #212121;
 }
 input.search-field:focus:hover {
-    background: #f7f7f7;
+    background: #f2f4f6;
 }
 .search-icon {
     position: absolute;
@@ -112,7 +112,7 @@ nav ul.popup-list li a {
     color: #212121 !important;
 }
 nav ul.popup-list li a:hover {
-    background-color: #f7f7f7;
+    background-color: #f2f4f6;
 }
 
 p {
