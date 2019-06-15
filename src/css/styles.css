@@ -61,7 +61,7 @@ nav .cajita{
 nav.shrink {
     height: 60px;
     transition: all ease .5s;
-    background: var(--marine);
+    background: var(--turqui);
 }
 
 nav.shrink .logo {
@@ -71,6 +71,10 @@ nav.shrink .logo {
 }
 nav.shrink .btn-login{
     background: var(--celeste);
+    color: var(--white);
+    transition: all ease .5s;
+}
+nav.shrink .textnav{
     color: var(--white);
     transition: all ease .5s;
 }
