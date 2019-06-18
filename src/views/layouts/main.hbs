@@ -4,71 +4,28 @@
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
-    <link href="css/materialize.min.css" media="screen,projection" rel="stylesheet" type="text/css"/>
-    <link href="css/styles.css" media="screen,projection" rel="stylesheet" type="text/css"/>
+    <link href="/css/materialize.min.css" media="screen,projection" rel="stylesheet" type="text/css"/>
+    <link href="/css/styles.css" media="screen,projection" rel="stylesheet" type="text/css"/>
 
     <!--Let browser know website is optimized for mobile-->
     <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
     <title>Kokua Project</title>
 </head>
 <body>
-<nav>
-    <div class="nav-wrapper">
-        <div class="row">
-            <div class="col s2 right">
-                <a class="waves-effect waves-light btn btn-login">Login</a>
-            </div>
-            <div class="col s3 right"> <!-- Aqui iria un search.. si tan solo tubiera uno-->
-            </div>
-            <div class="col s3 right">
 
-                <ul class="hide-on-med-and-down  left">
 
-                    <li><a class="turqui-acent-text textnav" href="#">Cursos</a></li>
-                    <li><a class="turqui-acent-text textnav" href="#">Alumnos</a></li>
-                    <li><a class="turqui-acent-text textnav" href="#">Profesores</a></li>
-                </ul>
-            </div>
+<main class="container">
+    {{> messages }}
+    {{> errors }}
+    {{{ body }}}
+</main>
 
-            <div class="col s2 right">
-                <a class="logo">KOKUA</a>
-            </div>
-        </div>
-    </div>
-</nav>
-{{{ body }}}
-
-<footer class="page-footer">
-    <div class="container">
-        <div class="row">
-            <div class="col l6 s12">
-                <h5 class="white-text">Footer</h5>
-                <p class="grey-text text-lighten-4">Text Footer</p>
-            </div>
-            <div class="col l4 offset-l2 s12">
-                <h5 class="white-text">Links</h5>
-                <ul>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 1</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                    <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    <div class="footer-copyright">
-        <div class="container">
-            &copy; 2019 Kokua
-            <a class="grey-text text-lighten-4 right" href="#!">More Links</a>
-        </div>
-    </div>
-</footer>
 <!--JavaScript at end of body for optimized loading-->
 <script
         crossorigin="anonymous"
         integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
         src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-<script src="js/materialize.min.js" type="text/javascript"></script>
-<script src="js/init.js" type="text/javascript"></script>
+<script src="/js/materialize.min.js" type="text/javascript"></script>
+<script src="/js/init.js" type="text/javascript"></script>
 </body>
 </html>

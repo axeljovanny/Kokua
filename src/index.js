@@ -31,8 +31,9 @@ app.use(session({
 //Global Variables
 
 // Routers
-app.use(require('./routes'));
-app.use(require('./routes/users'));
+app.use(require('./routes/index'));
+app.use(require('./routes/alumno'));
+app.use(require('./routes/profesor'));
 
 // Static Files
 app.use(express.static(path.join(__dirname, 'public')));
