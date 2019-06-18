@@ -5773,9 +5773,9 @@ body.keyboard-focused .dropdown-content li:focus {
 }
 
 .input-field.col .dropdown-content [type="checkbox"] + label {
-    top: 1px;
+    top: 0;
     left: 0;
-    height: 18px;
+    height: 15px;
     -webkit-transform: none;
     transform: none;
 }
