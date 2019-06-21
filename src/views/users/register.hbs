@@ -12,46 +12,8 @@
                 <div class="col s12">
                     <div class="card blueRegAlu">
                         <div class="card-content card.medium ">
-                            <form action="/users/register" method="POST">
-                                <div class="row">
-                                    <div class="col s12">
-                                        <div class="row ">
-                                            <div class="input-field col s6">
-                                                <input id="nomAlu" name="nomAlu" type="text" class="validate white-text">
-                                                <label for="nomAlu" class="white-text">Nombre</label>
-                                            </div>
-                                            <div class="input-field col s6">
-                                                <input id="apeAlu" name="apeAlu" type="text" class="validate white-text">
-                                                <label for="apeAlu" class="white-text">Apellidos</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col s6">
-                                                <input id="emaAlu" name="emaAlu" type="email" class="validate white-text">
-                                                <label for="emaAlu" class="white-text">Correo Electronico</label>
-                                            </div>
-                                            <div class="input-field col s6">
-                                                <input id="numConAlu" name="numConAlu" type="number" class="validate white-text">
-                                                <label for="numConAlu" class="white-text">Numero de Control</label>
-                                            </div>
-                                        </div>
-                                        <div class="input-field col s12 white-text">
-                                            <select class="white-text" id="carAlu" name="carAlu">
-                                                <option value="1" class="white-text">Sistemas Informaticos</option>
-                                                <option value="2" class="white-text">Redes y Telecomunicaciones</option>
-                                                <option value="3" class="white-text">Multimedia y Comercio Electronico</option>
-                                            </select>
-                                            <label class="white-text">Carrera</label>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <input id="pasAlu" name="pasAlu" type="password" class="validate white-text">
-                                                <label for="pasAlu" class="white-text">Password</label>
-                                            </div>
-                                        </div>
-                                        <button class="waves-effect waves-light btn" type="submit">Registrar Alumno</button>
-                                    </div>
-                                </div>
+                            <form action="/users/regAlu">
+                                <button class="waves-effect waves-light btn" type="submit">Registrar Alumno</button>
                             </form>
                         </div>
                     </div>
@@ -65,42 +27,11 @@
         <div class="container">
             <div class="row" align="center">
                 <div class="col s12">
-                    <div class="card grayRegPro">
+                    <div class="card blueRegAlu">
                         <div class="card-content card.medium ">
-                            <div class="form">
-                                <div class="row">
-                                    <div class="col s12">
-                                        <div class="row ">
-                                            <div class="input-field col s6">
-                                                <input name="nomPro" type="text" class="validate white-text">
-                                                <label for="nomPro" class="white-text">Nombre</label>
-                                            </div>
-                                            <div class="input-field col s6">
-                                                <input name="apePro" type="text" class="validate white-text">
-                                                <label for="apePro" class="white-text">Apellidos</label>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="input-field col s6">
-                                                <input name="emaPro" type="email" class="validate white-text">
-                                                <label for="emaPro" class="white-text">Correo Electronico (Institucional)</label>
-                                            </div>
-                                            <div class="input-field col s6">
-                                                <input name="cedProPro" type="number" class="validate white-text">
-                                                <label for="cedProPro" class="white-text">Cedula Profecional</label>
-                                            </div>
-                                        </div>
-
-                                        <div class="row">
-                                            <div class="input-field col s12">
-                                                <input name="pasPro" type="password" class="validate white-text">
-                                                <label for="pasPro" class="white-text">Password</label>
-                                            </div>
-                                        </div>
-                                        <a class="btn disabled">Registrar Profesor</a>
-                                    </div>
-                                </div>
-                            </div>
+                            <form action="/users/regPro">
+                                <button class="waves-effect waves-light btn" type="submit">Registrar Profesor</button>
+                            </form>
                         </div>
                     </div>
                 </div>

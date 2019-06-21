@@ -36,7 +36,7 @@ app.use(require('./routes/alumno'));
 app.use(require('./routes/profesor'));
 
 // Static Files
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
 
 //Server is listening
 app.listen(app.get('port'), () =>{
