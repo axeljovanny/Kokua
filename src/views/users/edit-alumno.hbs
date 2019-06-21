@@ -1,0 +1,54 @@
+
+<div class="row">
+    <div class="col s12 m6">
+        <div class="card blue-grey darken-1">
+            <div class="card-content white-text">
+                <form action="/alumnos/edit/{{alumno._id}}?_method=PUT" method="POST">
+                    <input type="hidden" name="_method" value="PUT">
+                    <div class="row">
+                        <div class="col s12">
+                            <div class="row ">
+                                <div class="input-field col s6">
+                                    <input id="nomAlu" name="nomAlu" type="text" class="validate white-text" value="{{alumno.nomAlu}}">
+                                    <label for="nomAlu" class="white-text">Nombre</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="apeAlu" name="apeAlu" type="text" class="validate white-text" value="{{alumno.apeAlu}}">
+                                    <label for="apeAlu" class="white-text">Apellidos</label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s6">
+                                    <input id="emaAlu" name="emaAlu" type="email" class="validate white-text" value="{{alumno.emaAlu}}">
+                                    <label for="emaAlu" class="white-text">Correo Electronico</label>
+                                </div>
+                                <div class="input-field col s6">
+                                    <input id="numConAlu" name="numConAlu" type="number" class="validate white-text" value="{{alumno.numColAlu}}">
+                                    <label for="numConAlu" class="white-text">Numero de Control</label>
+                                </div>
+                            </div>
+                            <div class="input-field col s12 white-text">
+                                <select class="white-text" id="carAlu" name="carAlu">
+                                    <option value="1" class="white-text">Sistemas Informaticos</option>
+                                    <option value="2" class="white-text">Redes y Telecomunicaciones</option>
+                                    <option value="3" class="white-text">Multimedia y Comercio Electronico</option>
+                                </select>
+                                <label class="white-text">Carrera</label>
+                            </div>
+                            <div class="row">
+                                <div class="input-field col s12">
+                                    <input id="pasAlu" name="pasAlu" type="password" class="validate white-text" value="{{alumno.pasAlu}}">
+                                    <label for="pasAlu" class="white-text">Password</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <button class="waves-effect waves-light btn" type="submit">Save</button>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+</div>

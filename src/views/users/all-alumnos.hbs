@@ -1,0 +1,43 @@
+<div class="row">
+{{#each alumnos}}
+        <div class="col s12 m3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="/imgs/bg.jpg">
+                    <span class="card-title">
+                            {{nomAlu}} <a href="/alumnos/edit/{{_id}}">
+                            <i class="tiny material-icons">brush</i></a>
+                        </span>
+                    <form action="/alumnos/delete/{{_id}}?_method=DELETE" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="btn-floating halfway-fab waves-effect waves-light red">
+                            <i class="tiny material-icons">delete</i>
+                        </button>
+                    </form>
+                </div>
+                <div class="card-content">
+                    <p>{{ apeAlu }}</p>
+                    <p>{{ emaAlu}}</p>
+                    <p>{{ numConAlu}}</p>
+                    <p>{{ carAlu}}</p>
+                    <p>{{ pasAlu}}</p>
+                </div>
+                <div class="card-action">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{else}}
+    <div class="row">
+        <div class="col s12 m9">
+            <div class="card">
+                <h1>Hello {{user.name}}</h1>
+                <p class="lead">There are not Alumnos yet.</p>
+                <a href="/users/register" class="btn-floating halfway-fab waves-effect waves-light red">Create
+                    One!</a>
+            </div>
+        </div>
+    </div>
+{{/each}}
