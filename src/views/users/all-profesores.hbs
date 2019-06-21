@@ -1,0 +1,42 @@
+<div class="row">
+{{#each profesores}}
+        <div class="col s12 m3">
+            <div class="card">
+                <div class="card-image">
+                    <img src="/imgs/ProfesoresPer.jpg">
+                    <span class="card-title">
+                            {{nomPro}} <a href="/profesores/edit/{{_id}}">
+                            <i class="tiny material-icons">brush</i></a>
+                        </span>
+                    <form action="/profesores/delete/{{_id}}?_method=DELETE" method="POST">
+                        <input type="hidden" name="_method" value="DELETE">
+                        <button type="submit" class="btn-floating halfway-fab waves-effect waves-light red">
+                            <i class="tiny material-icons">delete</i>
+                        </button>
+                    </form>
+                </div>
+                <div class="card-content">
+                    <p>{{ apePro }}</p>
+                    <p>{{ emaPro}}</p>
+                    <p>{{ cedProPro}}</p>
+                    <p>{{ pasPro}}</p>
+                </div>
+                <div class="card-action">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+{{else}}
+    <div class="row">
+        <div class="col s12 m9">
+            <div class="card">
+                <h1>Hello {{user.name}}</h1>
+                <p class="lead">There are not Profesores yet.</p>
+                <a href="/users/regPro" class="btn-floating halfway-fab waves-effect waves-light red">Create
+                    One!</a>
+            </div>
+        </div>
+    </div>
+{{/each}}

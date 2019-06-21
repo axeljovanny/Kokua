@@ -2,6 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 const Alumno = require('../models/Alumno');
+
 router.get('/users/login', (req, res) => {
     res.render('users/login');
 });
@@ -10,7 +11,11 @@ router.get('/users/register', (req, res) => {
     res.render('users/register');
 });
 
-router.post('/users/register', async (req, res) => {
+router.get('/users/regAlu', (req, res) => {
+    res.render('users/regAlu');
+});
+
+router.post('/users/regAlu', async (req, res) => {
     const {nomAlu, apeAlu, emaAlu, numConAlu, carAlu, pasAlu} = req.body;
     const errors = [];
     if (!nomAlu) {
@@ -32,7 +37,7 @@ router.post('/users/register', async (req, res) => {
         errors.push({text: 'Escriba una contrasena'});
     }
     if (errors.length > 0) {
-        res.render('users/register', {
+        res.render('users/regAlu', {
             errors,
             nomAlu,
             apeAlu,
@@ -54,7 +59,6 @@ router.post('/users/register', async (req, res) => {
         res.redirect('/alumnos');
     }
 });
-
 
 
 router.get('/alumnos', async (req, res) => {
